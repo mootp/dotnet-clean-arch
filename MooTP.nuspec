@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+
+    <id>MooTP.WebApi.Template</id>
+    <version>0.0.1</version>
+    <title>MooTP WebAPI</title>
+    <authors>MooTP</authors>
+    <description>MooTP WebAPI (mootp-sln)</description>
+    <summary>
+      This is a solution template.
+    </summary>
+    <releaseNotes>
+      init solution template.
+    </releaseNotes>
+
+    <projectUrl>https://github.com/mootp/dotnet-clean-arch</projectUrl>
+    <repository type="git" url="https://github.com/mootp/dotnet-clean-arch.git" branch="main" />
+
+    <license type="expression">MIT</license>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <tags>project template csharp dotnet</tags>
+
+    <packageTypes>
+      <packageType name="Template" />
+    </packageTypes>
+
+  </metadata>
+
+  <files>
+    <file src=".\**" target="content" exclude="**\node_modules\**;**\bin\**;**\obj\**;**\.vs\**;**\.vscode\**;**\.git\**;**\.github\**;**\README.md;" />
+  </files>
+
+</package>

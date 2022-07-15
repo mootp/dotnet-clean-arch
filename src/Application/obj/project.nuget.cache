@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "AYkirKuGD6EUYelAd70jW1yHeLpZ1zrZAYJ+N9hBQI0ar9aFc7Kh0CD7WfIuY6Wv/aS44C8hrAoGEzZXpSTMJg==",
+  "dgSpecHash": "CVtnPIY+YvXM5E73n0djfJAIp27V6uxX/q/AoSsYqnNbF3u30g71+EjVh5xnEZ7AS90eYHcCprtzX/ZtFLqn3A==",
   "success": true,
-  "projectFilePath": "C:\\moo\\code\\dotnet-clean-arch\\src\\Application\\Application.csproj",
+  "projectFilePath": "c:\\moo\\code\\dotnet-clean-arch\\src\\Application\\Application.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\e-it.officer02\\.nuget\\packages\\automapper\\11.0.1\\automapper.11.0.1.nupkg.sha512",
     "C:\\Users\\e-it.officer02\\.nuget\\packages\\bcrypt.net-next\\4.0.3\\bcrypt.net-next.4.0.3.nupkg.sha512",

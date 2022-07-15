@@ -1,0 +1,34 @@
+{
+    "$schema": "http://json.schemastore.org/template",
+    "author": "MooTP",
+    "classifications": [
+      "WebApi",
+      "Clean Architecture"
+    ],
+    "name": "MooTP WebAPI",
+    "description":  "MooTP WebAPI (mootp-sln)",
+    "identity": "MooTP.WebApi.Template",
+    "groupIdentity": "MooTP.WebApi",
+    "shortName": "mootp-sln",
+    "tags": {
+      "language": "C#",
+      "type": "project"
+    },
+    "sourceName": "MooTP.WebApi.Template",
+    "preferNameDirectory": true,
+    "sources": [
+      {
+        "source": "./",
+        "target": "./",
+        "exclude": [
+          "README.md",
+          "**/[Bb]in/**",
+          "**/[Oo]bj/**",
+          ".template.config/**/*",
+          ".vs/**/*",
+          "**/.git/**",
+          "*.nuspec"
+        ]
+      }
+    ]
+  }
