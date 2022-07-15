@@ -20,7 +20,7 @@
     <license type="expression">MIT</license>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <tags>project template csharp dotnet</tags>
-
+    <readme>README.md</readme>
     <packageTypes>
       <packageType name="Template" />
     </packageTypes>
@@ -28,6 +28,7 @@
   </metadata>
 
   <files>
+    <file src="README.md" />
     <file src=".\**" target="content" exclude="**\node_modules\**;**\bin\**;**\obj\**;**\.vs\**;**\.vscode\**;**\.git\**;**\.github\**;**\README.md;" />
   </files>
 
