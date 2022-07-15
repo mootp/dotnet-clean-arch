@@ -1,0 +1,15 @@
+C:\moo\code\dotnet-clean-arch\src\Domain\bin\Debug\net6.0\Domain.deps.json
+C:\moo\code\dotnet-clean-arch\src\Domain\bin\Debug\net6.0\Domain.dll
+C:\moo\code\dotnet-clean-arch\src\Domain\bin\Debug\net6.0\Domain.pdb
+C:\moo\code\dotnet-clean-arch\src\Domain\bin\Debug\net6.0\Contracts.dll
+C:\moo\code\dotnet-clean-arch\src\Domain\bin\Debug\net6.0\Contracts.pdb
+C:\moo\code\dotnet-clean-arch\src\Domain\obj\Debug\net6.0\Domain.csproj.AssemblyReference.cache
+C:\moo\code\dotnet-clean-arch\src\Domain\obj\Debug\net6.0\Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\moo\code\dotnet-clean-arch\src\Domain\obj\Debug\net6.0\Domain.AssemblyInfoInputs.cache
+C:\moo\code\dotnet-clean-arch\src\Domain\obj\Debug\net6.0\Domain.AssemblyInfo.cs
+C:\moo\code\dotnet-clean-arch\src\Domain\obj\Debug\net6.0\Domain.csproj.CoreCompileInputs.cache
+C:\moo\code\dotnet-clean-arch\src\Domain\obj\Debug\net6.0\Domain.csproj.CopyComplete
+C:\moo\code\dotnet-clean-arch\src\Domain\obj\Debug\net6.0\Domain.dll
+C:\moo\code\dotnet-clean-arch\src\Domain\obj\Debug\net6.0\refint\Domain.dll
+C:\moo\code\dotnet-clean-arch\src\Domain\obj\Debug\net6.0\Domain.pdb
+C:\moo\code\dotnet-clean-arch\src\Domain\obj\Debug\net6.0\ref\Domain.dll

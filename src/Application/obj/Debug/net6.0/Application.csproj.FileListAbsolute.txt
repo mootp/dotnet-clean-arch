@@ -1,0 +1,5 @@
+C:\moo\code\dotnet-clean-arch\src\Application\obj\Debug\net6.0\Application.csproj.AssemblyReference.cache
+C:\moo\code\dotnet-clean-arch\src\Application\obj\Debug\net6.0\Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\moo\code\dotnet-clean-arch\src\Application\obj\Debug\net6.0\Application.AssemblyInfoInputs.cache
+C:\moo\code\dotnet-clean-arch\src\Application\obj\Debug\net6.0\Application.AssemblyInfo.cs
+C:\moo\code\dotnet-clean-arch\src\Application\obj\Debug\net6.0\Application.csproj.CoreCompileInputs.cache
