@@ -14,9 +14,7 @@ public class RoleRepository : Repository<Role>, IRoleRepository
     public IQueryable<Role> QueryInclude()
     {
         return _dbSet
-            .Include(x => x.Users)
-                .ThenInclude(x => x.User)
-            .Include(x => x.Permissions)
-                .ThenInclude(x => x.Permission);
+            .Include(x => x.Users).ThenInclude(x => x.User)
+            .Include(x => x.Permissions).ThenInclude(x => x.Permission);
     }
 }

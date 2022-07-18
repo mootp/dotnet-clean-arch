@@ -4,6 +4,7 @@ using System.Security.Cryptography;
 using System.Text;
 using Application.Interfaces;
 using Domain.Helpers;
+using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Options;
 using Microsoft.IdentityModel.Tokens;
 
@@ -24,7 +25,7 @@ public class JwtTokenGenerator : IJwtTokenGenerator
 
         var claims = new[]
         {
-            new Claim(JwtRegisteredClaimNames.Sub, userId.ToString()),
+            new Claim("id", userId.ToString()),
             new Claim(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString()),
         };
 
@@ -44,6 +45,38 @@ public class JwtTokenGenerator : IJwtTokenGenerator
         using var rng = RandomNumberGenerator.Create();
         rng.GetBytes(randomNumber);
         return Convert.ToBase64String(randomNumber);
+    }
+
+    public Guid? ValidateToken(string token)
+    {
+        if (token == null) return null;
+
+        var tokenValidationParameter = new TokenValidationParameters
+        {
+            ValidIssuer = _jwtSettings.Issuer,
+            ValidateIssuer = true,
+            ValidAudience = _jwtSettings.Audience,
+            ValidateAudience = true,
+            IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_jwtSettings.Secret)),
+            ValidateIssuerSigningKey = true,
+            ValidateLifetime = false,
+            // ClockSkew = TimeSpan.Zero,
+            // LifetimeValidator = CustomLifetimeValidator,
+            // RequireExpirationTime = true,
+        };
+
+        var jwtHandler = new JwtSecurityTokenHandler();
+        var principal = jwtHandler.ValidateToken(token, tokenValidationParameter, out SecurityToken securityToken);
+
+        var jwtSecurityToken = (JwtSecurityToken)securityToken;
+        if (jwtSecurityToken == null)
+        {
+            return null;
+        }
+
+        var id = principal.Claims.Where(x => x.Type == "id").Select(_ => _.Value).FirstOrDefault();
+
+        return Guid.Parse(id!);
     }
 
 }

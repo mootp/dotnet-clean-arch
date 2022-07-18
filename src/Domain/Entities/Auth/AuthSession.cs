@@ -13,6 +13,7 @@ public class AuthSession : BaseEntity
     [ForeignKey(nameof(User))]
     public Guid UserId { get; set; }
     public string? Desc { get; set; }
+    public string Provider { get; set; } = null!;
     public string RefreshToken { get; set; } = null!;
 
     public void SetSession(Guid userId, string refreshToken)
